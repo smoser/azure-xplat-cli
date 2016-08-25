@@ -1,0 +1,21 @@
+name: azure-cli
+version: "trunk"
+summary: Microsoft Azure Cross Platform Command Line
+description: a cross-platform command line interface for developers and IT
+ administrators to develop, deploy and manage Microsoft Azure applications.
+confinement: strict
+
+apps:
+  azure-cli:
+    command: azure-cli
+    plugs: [network]
+
+parts:
+  azure-xplat-cli:
+    plugin: nodejs
+    #source: https://github.com/Azure/azure-xplat-cli.git
+    source: .
+    source-type: git
+  launcher:
+    plugin: dump
+    source: snap-extra/
