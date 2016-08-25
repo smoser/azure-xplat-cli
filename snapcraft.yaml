@@ -13,9 +13,7 @@ apps:
 parts:
   azure-xplat-cli:
     plugin: nodejs
-    #source: https://github.com/Azure/azure-xplat-cli.git
     source: .
-    source-type: git
   launcher:
     plugin: dump
     source: snap-extra/
