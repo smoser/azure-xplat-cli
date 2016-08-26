@@ -1,5 +1,5 @@
 name: azure-cli
-version: "trunk"
+version: "0.10.3-trunk"
 summary: Microsoft Azure Cross Platform Command Line
 description: a cross-platform command line interface for developers and IT
  administrators to develop, deploy and manage Microsoft Azure applications.
